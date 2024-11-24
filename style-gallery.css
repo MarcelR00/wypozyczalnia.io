@@ -1,0 +1,61 @@
+
+
+/* Galeria */
+/* Nagłówek sekcji */
+.section-title {
+    font-size: 2.5rem; /* Duży nagłówek */
+    text-align: center;
+    color: #333333; /* Pomarańczowy dla wyróżnienia */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Lekki odstęp między literami */
+  }
+  
+  /* Opis sekcji */
+  .section-description {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000000; /* Subtelny szary */
+    margin-bottom: 20px;
+    line-height: 1.5;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .section-title-done{
+    font-size: 2.5rem; /* Duży nagłówek */
+    text-align: center;
+    color: #333333; /* Pomarańczowy dla wyróżnienia */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Lekki odstęp między literami */
+    margin-top: 10%;
+  }
+  
+  
+  /* Separator pod nagłówkiem */
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #333333; /* Taki sam kolor jak nagłówek */
+    margin: 10px auto;
+    border-radius: 2px;
+  }
+  
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolumny, każda o szerokości 1fr */
+    gap: 20px; /* Odstęp między zdjęciami */
+    margin: 0 auto; /* Wycentrowanie galerii */
+    max-width: 100%; /* Maksymalna szerokość galerii */
+  }
+  
+  .gallery-grid img {
+    width: 100%; /* Ustawienie szerokości na 100% kontenera */
+    border-radius: 8px; /* Zaokrąglone rogi */
+    object-fit: cover; /* Dopasowanie obrazu, zachowując proporcje */
+  }
+  

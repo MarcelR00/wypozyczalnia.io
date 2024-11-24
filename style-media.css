@@ -1,0 +1,185 @@
+
+/* Stylizacja responsywna */
+@media (max-width: 768px) {
+    h1 {
+      font-size: 2rem; /* Mniejszy rozmiar nagłówka na średnich ekranach */
+      margin-bottom: 10px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+    }
+  
+  
+  
+  /* Wyświetl burger menu */
+    .burger-menu {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 9999;
+    }
+  
+    /* Ukryj menu na starcie */
+    .menu {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      position: fixed; /* Zmieniamy na fixed, aby menu pokrywało cały ekran */
+      top: 0;
+      right: 0;
+      width: 100%; /* Ustawienie na 100% szerokości */
+      height: 100%; /* Ustawienie na 100% wysokości */
+      background-color: rgba(0, 0, 0, 0.8); /* Tło z przezroczystością */
+      padding: 20px;
+      border-radius: 0; /* Usunięcie zaokrągleń */
+      z-index: 999; /* Ustawienie wysokiego priorytetu wyświetlania */
+    }
+  
+    /* Menu otwarte */
+    .menu.active {
+      display: flex;
+      justify-content: center; /* Wyrównanie menu do środka */
+      align-items: center; /* Wyrównanie elementów do środka */
+    }
+  
+    .menu.active li {
+      margin-top: 30px;
+    }
+  
+    /* Styl linków w menu mobilnym */
+    .menu li a {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 10px;
+      transition: color 0.3s ease;
+    }
+  
+    .menu li a:hover {
+      color: #ce2727;
+    }
+  
+    #hero h1 {
+      font-size: 3rem;
+    }
+  
+    .modal-content {
+      max-width: 600px; /* Większa szerokość na dużych ekranach */
+    }
+  
+    .close-modal {
+      background: none;
+      border: none;
+      font-size: 24px;
+      font-weight: bold;
+      color: red;
+      cursor: pointer;
+      position: absolute;
+      margin-left: 35%;
+    }
+  
+    .offer-cards {
+      flex-direction: column;
+    }
+  
+    .offer-cards .card {
+      width: 100%;
+    }
+  
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .card {
+      width: calc(50% - 20px); /* Dwie karty w wierszu na średnich ekranach */
+    }
+  
+    #about .section-title {
+      font-size: 2.2rem;
+    }
+  
+    #why-us .section-title {
+      font-size: 2.2rem;
+    }
+  
+    #testimonials .section-title {
+      font-size: 2.2rem;
+    }
+  
+    .contact-get {
+      flex-direction: column; /* Zmiana układu na kolumnowy */
+      align-items: center; /* Wyrównanie elementów na środku */
+    }
+  
+    .contact-item {
+      flex: none; /* Wyłączenie rozciągania elementów */
+      width: 100%; /* Każdy element zajmuje pełną szerokość */
+      max-width: 400px; /* Maksymalna szerokość dla estetyki */
+      margin-bottom: 20px; /* Odstęp między elementami */
+    }
+  
+    .footer-container {
+      flex-direction: row; /* Układ w wierszu na większych ekranach */
+      justify-content: space-between;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.8rem; /* Jeszcze mniejszy na najmniejszych ekranach */
+    }
+  
+    h2 {
+      font-size: 1.3rem;
+    }
+  
+    h3 {
+      font-size: 1rem;
+    }
+  
+    #hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .card {
+      width: 100%; /* Jedna karta na małych ekranach */
+    }
+  
+    .gallery-grid {
+      grid-template-columns: 1fr; /* 1 kolumna na małych ekranach */
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .contact-info, .social-media, .footer-links {
+      margin-bottom: 20px;
+    }
+  
+    .contact-item h3 {
+      font-size: 1.5rem; /* Zmniejszenie rozmiaru nagłówków */
+    }
+  
+    .contact-item p {
+      font-size: 1.1rem; /* Zmniejszenie rozmiaru tekstu */
+    }
+  
+    .contact-item a {
+      font-size: 1rem; /* Zmniejszenie rozmiaru linków */
+    }
+  }
+  

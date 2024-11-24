@@ -1,0 +1,194 @@
+
+
+/* Sekcja "Kontakt" */
+#contact {
+    background-color: #ebecec;
+    padding: 60px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  #contact .section-title {
+    font-size: 2.5rem;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  #contact .section-description {
+    font-size: 1.5rem;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+  
+  /* Formularz */
+  .contact-form form {
+    max-width: 600px; /* Wypełnij szerokość rodzica */
+    padding: 10px; /* Dodaj wewnętrzne odstępy */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    font-size: 1.3rem;
+    color: black;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%; /* Dopasuj do szerokości kontenera */
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  button[type="submit"] {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #ce2727;
+  }
+  
+  
+  .contact-get {
+    display: flex;
+    justify-content: space-around; /* Rozdziela kolumny równomiernie */
+    align-items: flex-start; /* Wyrównuje elementy do góry */
+    margin-top: 20px; /* Dodaje odstęp od formularza */
+    gap: 20px; /* Odstęp między kolumnami */
+    flex-wrap: wrap; /* Umożliwia przełamanie wiersza przy mniejszych ekranach */
+    margin-top: 10%;
+  }
+  
+  .contact-get-done {
+    display: flex;
+    justify-content: space-around; /* Rozdziela kolumny równomiernie */
+    align-items: flex-start; /* Wyrównuje elementy do góry */
+    margin-top: 20px; /* Dodaje odstęp od formularza */
+    gap: 20px; /* Odstęp między kolumnami */
+    flex-wrap: wrap; /* Umożliwia przełamanie wiersza przy mniejszych ekranach */
+    margin-top: 20%;
+  }
+  
+  .contact-item {
+    flex: 1; /* Każdy element zajmuje równą szerokość */
+    text-align: center; /* Wyśrodkowuje tekst wewnątrz kolumny */
+    min-width: 250px; /* Minimalna szerokość elementu */
+  }
+  
+  .contact-item h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333333; /* Ustawienie koloru nagłówka */
+  }
+  
+  .contact-item p {
+    font-size: 1.3rem;
+    color: #000000; /* Subtelny szary */
+  }
+  
+  .contact-item a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-item a:hover {
+    color: #ce2727; /* Ciemniejszy czerwony na hover */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .section-title {
+    font-size: 2.5rem; /* Duży nagłówek */
+    text-align: center;
+    color: #333333; /* Pomarańczowy dla wyróżnienia */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Lekki odstęp między literami */
+  }
+  
+  /* Opis sekcji */
+  .section-description {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000000; /* Subtelny szary */
+    margin-bottom: 20px;
+    line-height: 1.5;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .section-description-done {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000000; /* Subtelny szary */
+    margin-bottom: 20px;
+    line-height: 1.5;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .section-title-done{
+    font-size: 2.5rem; /* Duży nagłówek */
+    text-align: center;
+    color: #333333; /* Pomarańczowy dla wyróżnienia */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Lekki odstęp między literami */
+    margin-top: 10%;
+  }
+  
+  .section-title-done::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #333333; /* Taki sam kolor jak nagłówek */
+    margin: 10px auto;
+    border-radius: 2px;
+  }
+  
+  
+  /* Separator pod nagłówkiem */
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #333333; /* Taki sam kolor jak nagłówek */
+    margin: 10px auto;
+    border-radius: 2px;
+  }

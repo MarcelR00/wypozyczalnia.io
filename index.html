@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuadExplorer - Strona główna</title>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-index.css">
+  <link rel="stylesheet" href="style-media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <nav>
+      <button class="burger-menu" aria-label="Otwórz menu">
+        <i class="fa fa-bars"></i>
+      </button>
+      <ul class="menu">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="offer.html">Oferta</a></li>
+        <li><a href="gallery.html">Galeria</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html" id="contact"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>Czas na przygodę z QuadExplorer!</h1>
+    <p>Przeżyj niezapomniane chwile off-road na quadach</p>
+    <button>Zarezerwuj przejazd</button>
+  </section>
+  <div class="reservation-modal" id="reservationModal">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Zamknij">✖</button>
+      <h2>Zarezerwuj przejazd</h2>
+      <form id="reservationForm">
+        <div class="form-row">
+          <label for="name">Imię i nazwisko:</label>
+          <input type="text" id="name" name="name" placeholder="Podaj swoje imię i nazwisko" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Adres e-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Podaj swój e-mail" required>
+        </div>
+        <div class="form-row">
+          <label for="phone">Numer telefonu:</label>
+          <input type="text" id="phone" name="phone" placeholder="Podaj numer telefonu" pattern="[0-9]{9}" required>
+        </div>
+        <div class="form-row">
+          <label for="date">Data przejazdu:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Uwagi:</label>
+          <textarea id="message" name="message" rows="2" placeholder="Dodatkowe informacje"></textarea>
+        </div>
+        <button type="submit">Wyślij</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="confirmation-modal" id="confirmationModal">
+    <div class="confirmation-content">
+      <h2>Dziękujemy za rezerwację!</h2>
+      <p>Twoja rezerwacja została pomyślnie złożona. Skontaktujemy się z Tobą wkrótce.</p>
+    </div>
+  </div>
+  
+  
+
+  <section id="about">
+    <h2 class="section-title">O nas</h2>
+    <p class="section-description">Jesteśmy wypożyczalnią z długim doświadczeniem w zapewnianiu rozrywki naszym klientom. Posiadamy bardzo szeroką flotę quadów przeprawowych. Nasza oferta obejmuje quady dla starszych oraz dla tych najmłodszych. Wykwalifikowani instruktorzy nauczą Cię jak prowadzić quada oraz przeprowadzą przez malownicze krajobrazy oraz cięższe tereny. Prowadzimy wycieczki przeprawowe w zorganizowanej grupie, dlatego jesteśmy otwarci na imprezy firmowe, dni kawalerskie czy urodziny.</p>
+    <p class="section-description">Dołącz do nas i poczuj prawdziwe błotne emocje!</p>
+  </section>
+
+  <section id="why-us">
+    <h2 class="section-title">Dlaczego my?</h2>
+    <ul class="features-list">
+      <li><i class="fa-solid fa-check" style="color: red;font-size: 30px; margin-right: 10px;"></i>Quady przeprawowe przygotowane dla każdej grupy wiekowej.</li>
+      <li><i class="fa-solid fa-check" style="color: red;font-size: 30px; margin-right: 10px;"></i>Jesteśmy otwarci na organizację zbiorowych wycieczek.</li>
+      <li><i class="fa-solid fa-check" style="color: red;font-size: 30px; margin-right: 10px;"></i>Bezpieczne trasy i pełne wsparcie techniczne.</li>
+      <li><i class="fa-solid fa-check" style="color: red;font-size: 30px; margin-right: 10px;"></i>Atrakcyjne ceny i elastyczne terminy.</li>
+      <li><i class="fa-solid fa-check" style="color: red;font-size: 30px; margin-right: 10px;"></i>Doświadczona kadra instruktorów.</li>
+    </ul>
+  </section>
+
+  <section id="testimonials">
+    <h2 class="section-title">Opinie naszych klientów</h2>
+    <div class="testimonials">
+      <blockquote>"Bardzo dobra organizacja wycieczek grupowych. Quady w super stanie technicznym." – Dawid M.</blockquote>
+      <blockquote>"Świetna kadra instruktorów która przeprowadziła eksperckie wprowadzenie w świat quadów!" – Piotr M.</blockquote>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="contact-info">
+        <p><i class="fas fa-phone"></i> <a href="tel:+48123456789">+48 123 456 789</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> ul. Mała 2, 00-123 Płock</p>
+        <p><i class="fa-solid fa-envelope"></i>kontakt@quadexplorer.pl</p>
+      </div>
+      <div class="social-media">
+        <p>Znajdź nas:</p>
+        <a href="https://facebook.com" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="footer-links">
+        <a href="regulations.html">Regulamin</a>
+        <p>&copy; 2024 QuadExplorer</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

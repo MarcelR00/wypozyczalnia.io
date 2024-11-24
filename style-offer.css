@@ -1,0 +1,80 @@
+
+/* Karty quadów */
+.offer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .card {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(33.333% - 20px); /* Trzy karty w wierszu */
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .price {
+    font-size: 1.2rem;
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+
+
+  .section-title {
+    font-size: 2.5rem; /* Duży nagłówek */
+    text-align: center;
+    color: #333333; /* Pomarańczowy dla wyróżnienia */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Lekki odstęp między literami */
+  }
+  
+  /* Opis sekcji */
+  .section-description {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000000; /* Subtelny szary */
+    margin-bottom: 20px;
+    line-height: 1.5;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  /* Separator pod nagłówkiem */
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #333333; /* Taki sam kolor jak nagłówek */
+    margin: 10px auto;
+    border-radius: 2px;
+  }

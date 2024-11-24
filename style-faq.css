@@ -1,0 +1,72 @@
+#faq {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  
+  .faq-item {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .faq-question {
+    background-color: #a6a4a5; /* Stonowany pomarańczowy tło */
+    color: rgb(0, 0, 0); /* Biały tekst */
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0;
+    transition: background-color 0.3s ease; /* Animacja przejścia */
+  }
+  
+  .faq-question:hover {
+    background-color: #b9b9b9; /* Ciemniejszy pomarańczowy na hover */
+  }
+  
+  .faq-answer {
+    padding: 10px 20px;
+    background-color: #F9F4EF; /* Jaśniejszy beżowy dla odpowiedzi */
+    color: #000000;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+
+  .section-title {
+    font-size: 2.5rem; /* Duży nagłówek */
+    text-align: center;
+    color: #333333; /* Pomarańczowy dla wyróżnienia */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Lekki odstęp między literami */
+  }
+  
+  /* Opis sekcji */
+  .section-description {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000000; /* Subtelny szary */
+    margin-bottom: 20px;
+    line-height: 1.5;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  /* Separator pod nagłówkiem */
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #333333; /* Taki sam kolor jak nagłówek */
+    margin: 10px auto;
+    border-radius: 2px;
+  }
