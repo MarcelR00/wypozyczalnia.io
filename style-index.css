@@ -1,7 +1,7 @@
 
 /* Hero */
 #hero {
-    background: url('foto/bela1.jpg') no-repeat center center;
+    background: url('/foto/bela1.jpg') no-repeat center center;
     background-size: cover;
     color: white; /* Biały tekst */
     text-align: center;
