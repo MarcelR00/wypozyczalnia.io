@@ -113,8 +113,18 @@
       font-size: 2.2rem;
     }
   
+    #testimonials blockquote {
+      max-width: 80%; /* Ustawienie szerokości na 100% */
+      padding-left: 10px; /* Zmniejszenie paddingu dla lepszej czytelności */
+      font-size: 1.2rem; /* Opcjonalnie zmniejszenie rozmiaru tekstu */
+    }
+  
     #testimonials .section-title {
-      font-size: 2.2rem;
+      font-size: 2rem; /* Opcjonalnie zmniejszenie tytułu */
+    }
+  
+    #testimonials {
+      padding: 40px 10px; /* Zmniejszenie ogólnego paddingu */
     }
   
     .contact-get {
